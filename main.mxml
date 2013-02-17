@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009"
+					   xmlns:s="library://ns.adobe.com/flex/spark"
+					   xmlns:mx="library://ns.adobe.com/flex/mx"
+					   width="336" height="221" maxWidth="336" maxHeight="221">
+	
+	<fx:Script>
+		<![CDATA[
+			import mpro.runInfo;
+			
+			import mx.controls.Alert;
+			
+			protected function button1_clickHandler(event:MouseEvent):void
+			{
+				var run:runInfo = new runInfo();
+				for(var i:int = 0; i < 5000; i++)
+				{
+					trace("Jumenta");
+				}
+				Alert.show(run.endRun(), "Teste");
+			}
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<s:Button x="140" y="151" label="Button" click="button1_clickHandler(event)"/>
+</s:WindowedApplication>
