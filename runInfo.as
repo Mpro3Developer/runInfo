@@ -1,3 +1,9 @@
+/**
+ * Classe para calculo de tempo de execucao e uso de memoria
+ * @author Matheus Castello
+ * http://mpro3.com.br
+ */
+
 package mpro
 {
 	import flash.system.System;
